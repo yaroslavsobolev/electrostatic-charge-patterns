@@ -1,0 +1,6 @@
+% Model:              on_dielectric_for_python_v4_50mm_d.mph
+% Version:            COMSOL 5.4.0.388
+% Date:               Feb 5 2021, 21:48
+% Table:              Probe Table 2 - 
+% dummy_variable         Terminal charge (C)      stamp_coverage
+1                        5.050954460880274E-7     0.02199999999999913
