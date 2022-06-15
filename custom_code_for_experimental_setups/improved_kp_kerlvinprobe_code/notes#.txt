@@ -1,0 +1,17 @@
+params:
+
+optimal 2D angle:
+
+	motor -9943:
+	+6.85
+
+	motor -5305:
+	+7.1998
+	
+	
+	
+before 0.05*15 move on angle_x
+
+[[ 168.8582745 ]
+ [  -3.86377935]
+ [  -0.76161268]]

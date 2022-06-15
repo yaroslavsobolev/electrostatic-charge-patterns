@@ -21,6 +21,9 @@ Bibtech code for citing the paper:
 }
 ```
 
+Experimental data and results of numerical calculations are too large for Github and 
+are available from separate repository in Harvard Dataverse: URL, DOI.
+
 ## Installation
 
 This code is compatible with Python 3.7
@@ -36,15 +39,22 @@ For running the numerical model (see `macro-scale-model` folder) you would addit
 COMSOL Multiphysics 5.4 or later with AC/DC package.
 
 ## Reproducing methods and figures from the paper
-Experimental data is and results of numerical calculations are too large for Github and 
-are available from separate repository in Harvard Dataverse: URL, DOI.
 
-For reproducing Scanning Kelvin Probe (SKP) (Figure 2c,f, Supplementary Figure 5) see 
+For constructing Paschen's law interpolator from literature data 
+(Supplementary Figure S26-S27)
+see `paschen_curve_approximating/paschen_curve_processing.py`
+and `paschen_curve_approximating/paschen_curve_processing_for_argon.py`
+
+For reproducing Scanning Kelvin Probe (SKP) (Figure 2c,f, Figure 3b, 
+Supplementary Figure 5) see 
 folder `data_processing/kelvinprobe_viewer`
 
 For plotting sections of SKP maps see `data_processing/kelvinprobe_sections` folder
 
-For processing electrometer data (Figure 4d, Supplementary Figures S10d, S11d, S12c) see 
+For reproducing Supplementary Figures S14-S18 
+see `data_processing/kelvinprobe_viewer/moving_averages.py`
+
+For processing electrometer data (Figure 4d, Figure 3b, Supplementary Figures S10d, S11d, S12c, S6d) see 
 scripts named `data_processing/process_electrometer*.py`
 
 For processing direct optical detection os sparks see (Figure 4b,c), see 
@@ -55,3 +65,8 @@ For detecting motion of delamination front (Supplementary Figures S10b, S11b, S1
 
 For XPS data plotting (Figure S8, S9) see `data_processing/plot-all-XPS.py`
 
+For hygrometer calibration (Supplementary Figure S33)
+see `data_processing/hygrometer_calibration`
+
+For evaluation of adhesion work (Figure 3c, Supplementary Figures S6c,e)
+see `data_processing/adhesion_work_extraction.py`
