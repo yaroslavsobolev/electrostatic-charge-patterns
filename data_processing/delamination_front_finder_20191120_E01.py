@@ -38,7 +38,7 @@ def shift_image(image, vector):
     shifted = shifted.astype(image.dtype)
     return shifted
 
-frames_directory = 'Y:\\PDMS-PMMA_delamination_experiments\\data\\20191120_5cm_3in_72RH_ambRH21_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p6_E01\\video'
+frames_directory = 'experimental_data\\PDMS-PMMA_delamination_experiments\\data\\20191120_5cm_3in_72RH_ambRH21_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p6_E01\\video'
 istart = 340 #int(round(57*30))+5+20
 iend = 660  #2280
 c = 0.0033

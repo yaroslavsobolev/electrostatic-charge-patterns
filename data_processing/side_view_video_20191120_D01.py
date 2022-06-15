@@ -37,7 +37,7 @@ from lmfit.models import GaussianModel, ConstantModel
 import pylab
 import imageio
 frames_per_sec = 60
-target_folder = 'Y:\\PDMS-PMMA_delamination_experiments\\data\\20191120_5cm_3in_72RH_ambRH21_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p5_D01'
+target_folder = 'experimental_data\\PDMS-PMMA_delamination_experiments\\data\\20191120_5cm_3in_72RH_ambRH21_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p5_D01'
 video_frames_at_discharge = []
 video_frames_at_discharge = pickle.load(open(target_folder + '\\electrometer\\video_frames_at_discharge.pickle', 'rb'))
 video_frames_at_discharge = [int(round(x*frames_per_sec)) for x in video_frames_at_discharge]

@@ -32,7 +32,7 @@ from scipy import fftpack
 from scipy import signal
 from scipy.signal import butter, sosfilt, sosfreqz
 
-frames_directory = 'F:\\PDMS-PMMA_delamination_experiments\\data\\20191017_5cm_3in_62RH_eq30min_oldUVPDMS_PMMAtol_uniformspeeds_0p1_B01\\video'
+frames_directory = 'experimental_data\\PDMS-PMMA_delamination_experiments\\data\\20191017_5cm_3in_62RH_eq30min_oldUVPDMS_PMMAtol_uniformspeeds_0p1_B01\\video'
 istart, iend = pickle.load(open(frames_directory + '\\delamination_fronts\\fronts\\istart_iend.p', "rb"))
 front_curves = pickle.load(open(frames_directory + '\\delamination_fronts\\fronts\\front_curves_spacederiv.p', "rb"))
 roi = pickle.load(open(frames_directory + '\\delamination_fronts\\fronts\\roi.p', "rb"))
@@ -184,7 +184,7 @@ ax7.set_ylabel('Velocity of delamination (peeling) front (mm/s)', color='C0')
 plt.plot(np.arange(front_speed.shape[0])/frames_per_sec, front_speed*frames_per_sec/pix_per_mm)
 plt.ylim(0, np.max(front_speed*frames_per_sec/pix_per_mm))
 
-target_folder = 'F:/PDMS-PMMA_delamination_experiments/data/20191017_5cm_3in_62RH_eq30min_oldUVPDMS_PMMAtol_uniformspeeds_0p1_B01/'
+target_folder = 'experimental_data/PDMS-PMMA_delamination_experiments/data/20191017_5cm_3in_62RH_eq30min_oldUVPDMS_PMMAtol_uniformspeeds_0p1_B01/'
 # load electrometer data
 peaks = np.load(target_folder + 'electrometer/peaks.npy')
 t = np.load(target_folder + 'electrometer/time.npy')

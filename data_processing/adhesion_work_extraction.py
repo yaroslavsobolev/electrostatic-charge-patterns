@@ -49,10 +49,10 @@ def get_adhesion_work(target_folder, do_plotting=True, plotname='default.png'):
 
 
 if __name__ == '__main__':
-    # work = get_adhesion_work('Y:/PDMS-PMMA_delamination_experiments/data/' \
+    # work = get_adhesion_work('experimental_data/PDMS-PMMA_delamination_experiments/data/' \
     #                 '20191017_5cm_3in_62RH_eq30min_oldUVPDMS_PMMAtol_uniformspeeds_0p1_B01/')
 
-    directories = glob.glob("Y:/PDMS-PMMA_delamination_experiments/data/*3in*newPDMS*/")
+    directories = glob.glob("experimental_data/PDMS-PMMA_delamination_experiments/data/*3in*newPDMS*/")
     directories = [x.replace('\\', '/') for x in directories if ('Argo' not in x) and ('forAFM' not in x)]
 
     works = []

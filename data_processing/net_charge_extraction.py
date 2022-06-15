@@ -163,16 +163,16 @@ def get_adhesion_work(target_folder, do_plotting=True, plotname='default.png'):
     return work_per_area, delamination_time
 
 
-test_folder = 'Y:\\PDMS-PMMA_delamination_experiments\\data\\' \
+test_folder = 'experimental_data\\PDMS-PMMA_delamination_experiments\\data\\' \
               '20191120_5cm_3in_72RH_ambRH21_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p5_D01\\'
-# test_folder = 'Y:\\PDMS-PMMA_delamination_experiments\\data\\' \
+# test_folder = 'experimental_data\\PDMS-PMMA_delamination_experiments\\data\\' \
 #               '20191120_5cm_3in_72RH_ambRH21_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p6_E01\\'
 #
 # get_adhesion_work(test_folder)
 get_net_charge(target_folder=test_folder)
 
 def process_all_experiments():
-    directories = glob.glob("Y:/PDMS-PMMA_delamination_experiments/data/*3in*newPDMS*/")
+    directories = glob.glob("experimental_data/PDMS-PMMA_delamination_experiments/data/*3in*newPDMS*/")
     directories = [x.replace('\\', '/') for x in directories if ('Argo' not in x) and ('forAFM' not in x)]
     bkg_from_list = ['start']*125
     for i in [16, 17, 18, 22, 23, 32, 37, 38, 39, 43, 46, 47, 48, 49, 51, 52, 54, 56, 60, 64, 66, 67, 69, 71, 72, 74,
@@ -315,5 +315,5 @@ plt.tight_layout()
 fig3.savefig('electrometer_figures/adhesion_work_vs_front_velocity_2.png', dpi=300)
 plt.show()
 
-# net_charge = get_net_charge('E:/PDMS-PMMA_delamination_experiments/data/' \
+# net_charge = get_net_charge('experimental_data/PDMS-PMMA_delamination_experiments/data/' \
 #                 '20191017_5cm_3in_62RH_eq30min_oldUVPDMS_PMMAtol_uniformspeeds_0p1_B01/')

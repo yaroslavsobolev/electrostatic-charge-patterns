@@ -10,24 +10,24 @@ pylustrator.start()
 
 
 file_list = [
-'E:\\Lab\\improved_kp_kelvinprobe\\20191015_5cm_3in_62RH_eq30min_oldPDMS5to1_PMMAtol_uniformspeeds_0p1_B01_copy',
+'experimental_data\\improved_kp_kelvinprobe\\20191015_5cm_3in_62RH_eq30min_oldPDMS5to1_PMMAtol_uniformspeeds_0p1_B01_copy',
 
 'F:\\PDMS-PMMA_delamination_experiments\\kelvin_probe\\'
 '20191125_5cm_3in_60RH_ambRH43_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_dark_0p4_A01',
 
-'E:\\Lab\\improved_kp_kelvinprobe\\20191030_5cm_3in_50RH_ambRH38_eq30min_newPDMS5to1_PMMAtol_uniformspeeds_0p5_C01_copy',
+'experimental_data\\improved_kp_kelvinprobe\\20191030_5cm_3in_50RH_ambRH38_eq30min_newPDMS5to1_PMMAtol_uniformspeeds_0p5_C01_copy',
 
-'E:\\Lab\\improved_kp_kelvinprobe\\20191107_5cm_3in_41RH_ambRH36_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p3_B01',
+'experimental_data\\improved_kp_kelvinprobe\\20191107_5cm_3in_41RH_ambRH36_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p3_B01',
 
-'E:\\Lab\\improved_kp_kelvinprobe\\20191120_5cm_3in_72RH_ambRH21_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p5_D01_2',
+'experimental_data\\improved_kp_kelvinprobe\\20191120_5cm_3in_72RH_ambRH21_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p5_D01_2',
 
-'E:\\Lab\\improved_kp_kelvinprobe\\20191123_5cm_3in_70RH_ambRH44_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_dark_0p4_B01',
+'experimental_data\\improved_kp_kelvinprobe\\20191123_5cm_3in_70RH_ambRH44_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_dark_0p4_B01',
 
-'E:\\Lab\\improved_kp_kelvinprobe\\20191113_70RH_B01',
+'experimental_data\\improved_kp_kelvinprobe\\20191113_70RH_B01',
 
-'E:\\Lab\\improved_kp_kelvinprobe\\20191118_77RH_B01',
+'experimental_data\\improved_kp_kelvinprobe\\20191118_77RH_B01',
 
-'E:\\Lab\\improved_kp_kelvinprobe\\20191108_5cm_3in_31RH_ambRH32_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p3_E01'
+'experimental_data\\improved_kp_kelvinprobe\\20191108_5cm_3in_31RH_ambRH32_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p3_E01'
 ]
 data = []
 rh_analog = [62, 60, 50, 41, 72, 70, 70, 77, 31]

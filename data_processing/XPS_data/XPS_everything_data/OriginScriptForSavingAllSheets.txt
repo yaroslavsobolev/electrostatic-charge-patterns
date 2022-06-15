@@ -1,0 +1,9 @@
+fdlog.openpath(B); // choose directory
+
+doc -e W{   
+doc -e LW
+{
+string temp$ = wks.name$; // Get worksheet name
+expASC type:=text path:=%B%H_%(temp$) shortname:=1; 
+};
+}

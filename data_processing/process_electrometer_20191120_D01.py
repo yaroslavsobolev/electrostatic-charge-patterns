@@ -6,8 +6,8 @@ from scipy.signal import find_peaks
 import matplotlib.ticker as plticker
 import glob
 # target_folder = 'D:/Docs/Science/UNIST/Projects/Vitektrification/combined_observation_experiments/20191009_5cm_3in_60RH_eq30min_dryPDMS_PMMAtol_uniformspeeds_0p075_B01/'
-# target_folder = 'F:/PDMS-PMMA_delamination_experiments/data/20191015_5cm_3in_62RH_eq30min_oldPDMS5to1_PMMAtol_uniformspeeds_0p1_B01/'
-target_folder = 'F:/PDMS-PMMA_delamination_experiments/data/' \
+# target_folder = 'experimental_data/PDMS-PMMA_delamination_experiments/data/20191015_5cm_3in_62RH_eq30min_oldPDMS5to1_PMMAtol_uniformspeeds_0p1_B01/'
+target_folder = 'experimental_data/PDMS-PMMA_delamination_experiments/data/' \
                 '20191120_5cm_3in_72RH_ambRH21_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p5_D01/'
 
 def process_electrometer_trace(target_folder,

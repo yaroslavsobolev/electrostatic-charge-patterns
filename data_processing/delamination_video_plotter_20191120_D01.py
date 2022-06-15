@@ -32,8 +32,8 @@ from scipy import fftpack
 from scipy import signal
 from scipy.signal import butter, sosfilt, sosfreqz
 
-frames_directory = 'Y:\\PDMS-PMMA_delamination_experiments\\data\\20191120_5cm_3in_72RH_ambRH21_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p5_D01\\video'
-target_folder = 'Y:/PDMS-PMMA_delamination_experiments/data/20191120_5cm_3in_72RH_ambRH21_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p5_D01/'
+frames_directory = 'experimental_data\\PDMS-PMMA_delamination_experiments\\data\\20191120_5cm_3in_72RH_ambRH21_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p5_D01\\video'
+target_folder = 'experimental_data/PDMS-PMMA_delamination_experiments/data/20191120_5cm_3in_72RH_ambRH21_eq30min_newPDMS5to1_PMMAtol_newwire_uniformspeeds_slowstart_0p5_D01/'
 istart, iend = pickle.load(open(frames_directory + '\\delamination_fronts\\fronts\\istart_iend.p', "rb"))
 front_curves = pickle.load(open(frames_directory + '\\delamination_fronts\\fronts\\front_curves_spacederiv.p', "rb"))
 roi = pickle.load(open(frames_directory + '\\delamination_fronts\\fronts\\roi.p', "rb"))

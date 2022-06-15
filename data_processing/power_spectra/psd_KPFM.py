@@ -1,0 +1,146 @@
+import psds
+import numpy as np
+import matplotlib.pyplot as plt
+import imageio
+import pylab
+
+# im0 = imageio.imread('D:\\Docs\\Science\\UNIST\\Projects\\Vitektrification\\our_KPFM_of_true_um_mosaics\\20200109_fordischargepaper\\PMMA@Si_80RH_patterns_0p4_3cm_5in_charged_10nm.tif')
+# imB = imageio.imread('D:\\Docs\\Science\\UNIST\\Projects\\Vitektrification\\our_KPFM_of_true_um_mosaics\\20200109_fordischargepaper\\PMMA@Si_80RH_patterns_background_0p4_3cm_5in_notcharged_10nm.tif')
+# pix_per_mm = im0.shape[0]/(0.01)
+# im = im0[:,:]
+# plt.imshow(im0)
+# hanning = True
+# freqG,psdG = psds.power_spectrum(im, oned=True, hanning=hanning)
+# freqGB,psdGB = psds.power_spectrum(imB, oned=True, hanning=hanning)
+# area = im.shape[0] * im.shape[1] / (pix_per_mm) ** 2
+# data_for_export = np.vstack((freqG * (pix_per_mm / np.sqrt(2)), (3*psdG-psdGB)/area))
+# np.save('KPFM/001', data_for_export)
+# pylab.figure(2)
+# pylab.clf()
+# pylab.loglog(freqG*pix_per_mm,3*psdG-psdGB,label='Power spectrum minus noise spectrum')
+# pylab.legend(loc='best')
+# pylab.xlabel("Spatial frequency ($mm^{-1}$)")
+# pylab.ylabel("Normalized Power")
+# pylab.grid(True,which="both",ls="-")
+# plt.legend()
+# plt.show()
+
+
+# im0 = imageio.imread('D:\\Docs\\Science\\UNIST\\Projects\\Vitektrification\\our_KPFM_of_true_um_mosaics\\20200109_fordischargepaper_1\\PMMA@Si_80RH_patterns_0p4_3cm_5in_charged_10nm_large.tif')
+# imB = imageio.imread('D:\\Docs\\Science\\UNIST\\Projects\\Vitektrification\\our_KPFM_of_true_um_mosaics\\20200109_fordischargepaper_1\\PMMA@Si_80RH_patterns_0p4_3cm_5in_not_charged_10nm_large.tif')
+# pix_per_mm = im0.shape[0]/(0.085)
+# print(pix_per_mm)
+# im = im0[:,:]
+# plt.imshow(im0)
+# hanning = True
+# # data_for_export = np.vstack((freqG * (pix_per_mm / np.sqrt(2)), psdG / area))
+# freqG,psdG = psds.power_spectrum(im, oned=True, hanning=hanning)
+# freqGB,psdGB = psds.power_spectrum(imB, oned=True, hanning=hanning)
+# area = im.shape[0] * im.shape[1] / (pix_per_mm) ** 2
+# data_for_export = np.vstack((freqG * (pix_per_mm / np.sqrt(2)), (3*psdG-psdGB)/area))
+# np.save('KPFM/002', data_for_export)
+# pylab.figure(2)
+# pylab.clf()
+# # pylab.loglog(freqG*pix_per_mm,3*psdG,label='Power spectrum')
+# # pylab.loglog(freqGB*pix_per_mm,psdGB,label='Power spectrum, noise')
+# pylab.loglog(freqG*(pix_per_mm / np.sqrt(2)),(3*psdG-psdGB)/area,
+#                     label='Power spectrum minus noise spectrum')
+# pylab.legend(loc='best')
+# pylab.xlabel("Spatial frequency ($mm^{-1}$)")
+# pylab.ylabel("Normalized Power")
+# pylab.grid(True,which="both",ls="-")
+# plt.legend()
+# plt.show()
+
+im0 = imageio.imread('D:\\Docs\\Science\\UNIST\\Projects\\Vitektrification\\our_KPFM_of_true_um_mosaics\\20200109_fordischargepaper_1\\20180626_mosaics for review\\1um_GoodPDMS_newCL_5to1_Si_PMMA_075g_1h_PFQNE_KPFM_LH_20nm_Angewandte.tif')
+imB = imageio.imread('D:\\Docs\\Science\\UNIST\\Projects\\Vitektrification\\our_KPFM_of_true_um_mosaics\\20200109_fordischargepaper_1\\PMMA@Si_80RH_patterns_0p4_3cm_5in_not_charged_10nm_large.tif')
+pix_per_mm = im0.shape[0]/(0.001)
+print(pix_per_mm)
+im = im0[:,:]
+plt.imshow(im0)
+hanning = True
+freqG,psdG = psds.power_spectrum(im, oned=True, hanning=hanning)
+freqGB,psdGB = psds.power_spectrum(imB, oned=True, hanning=hanning)
+area = im.shape[0] * im.shape[1] / (pix_per_mm) ** 2
+data_for_export = np.vstack((freqG * (pix_per_mm / np.sqrt(2)), (psdG-psdGB)/area))
+np.save('KPFM/003', data_for_export)
+pylab.figure(2)
+pylab.clf()
+pylab.loglog(freqG*pix_per_mm,psdG,label='Power spectrum')
+pylab.loglog(freqGB*pix_per_mm,psdGB,label='Power spectrum, noise')
+# pylab.loglog(freqG*pix_per_mm,psdG-psdGB,label='Power spectrum minus noise spectrum')
+pylab.legend(loc='best')
+pylab.xlabel("Spatial frequency ($mm^{-1}$)")
+pylab.ylabel("Normalized Power")
+pylab.grid(True,which="both",ls="-")
+plt.legend()
+plt.show()
+
+# im0 = imageio.imread('D:\\Docs\\Science\\UNIST\\Projects\\Vitektrification\\our_KPFM_of_true_um_mosaics\\20200109_fordischargepaper_1\\10nm_thickness\\1um_frame_10nmthick_PMMA@Si_84RH_patterns_0p4_3cm_2in_charged_20nm.tif')
+# imB = imageio.imread('D:\\Docs\\Science\\UNIST\\Projects\\Vitektrification\\our_KPFM_of_true_um_mosaics\\20200109_fordischargepaper_1\\10nm_thickness\\1um_frame10nmthick_PMMA@Si_84RH_patterns_0p4_3cm_2in_NOT_charged_20nm.tif')
+# pix_per_mm = im0.shape[0]/(0.001)
+# print(pix_per_mm)
+# im = im0[:,:]
+# plt.imshow(im0)
+# hanning = True
+# freqG,psdG = psds.power_spectrum(im, oned=True, hanning=hanning)
+# freqGB,psdGB = psds.power_spectrum(imB, oned=True, hanning=hanning)
+# data_for_export = np.vstack((freqG * pix_per_mm, psdG-psdGB))
+# np.save('KPFM/004', data_for_export)
+# pylab.figure(2)
+# pylab.clf()
+# # pylab.loglog(freqG*pix_per_mm,psdG,label='Power spectrum')
+# # pylab.loglog(freqGB*pix_per_mm,psdGB,label='Power spectrum, NOT charged')
+# pylab.loglog(freqG*pix_per_mm,psdG-psdGB,label='Power spectrum minus noise spectrum')
+# pylab.legend(loc='best')
+# pylab.xlabel("Spatial frequency ($mm^{-1}$)")
+# pylab.ylabel("Normalized Power")
+# pylab.grid(True,which="major",ls="-")
+# plt.legend()
+# plt.show()
+
+# im0 = imageio.imread('D:\\Docs\\Science\\UNIST\\Projects\\Vitektrification\\our_KPFM_of_true_um_mosaics\\20200109_fordischargepaper_1\\10nm_thickness\\2_10um_frame10nmthick_PMMA@Si_84RH_patterns_0p4_3cm_2in_charged_20nm.tif')
+# imB = imageio.imread('D:\\Docs\\Science\\UNIST\\Projects\\Vitektrification\\our_KPFM_of_true_um_mosaics\\20200109_fordischargepaper_1\\10nm_thickness\\10um_frame10nmthick_PMMA@Si_84RH_patterns_0p4_3cm_2in_NOT_charged_20nm.tif')
+# pix_per_mm = im0.shape[0]/(0.010)
+# print(pix_per_mm)
+# im = im0[:,:]
+# plt.imshow(im0)
+# hanning = True
+# freqG,psdG = psds.power_spectrum(im, oned=True, hanning=hanning)
+# freqGB,psdGB = psds.power_spectrum(imB, oned=True, hanning=hanning)
+# data_for_export = np.vstack((freqG * pix_per_mm, psdG-psdGB))
+# np.save('KPFM/005', data_for_export)
+# pylab.figure(2)
+# pylab.clf()
+# # pylab.loglog(freqG*pix_per_mm,psdG,label='Power spectrum')
+# # pylab.loglog(freqGB*pix_per_mm,psdGB,label='Power spectrum, NOT charged')
+# pylab.loglog(freqG*pix_per_mm,psdG-psdGB,label='Power spectrum minus noise spectrum')
+# pylab.legend(loc='best')
+# pylab.xlabel("Spatial frequency ($mm^{-1}$)")
+# pylab.ylabel("Normalized Power")
+# pylab.grid(True,which="major",ls="-")
+# plt.legend()
+# plt.show()
+
+# im0 = imageio.imread('D:\\Docs\\Science\\UNIST\\Projects\\Vitektrification\\our_KPFM_of_true_um_mosaics\\20200109_fordischargepaper_1\\10nm_thickness\\2_10um_frame10nmthick_PMMA@Si_84RH_patterns_0p4_3cm_2in_charged_20nm.tif')
+# imB = imageio.imread('D:\\Docs\\Science\\UNIST\\Projects\\Vitektrification\\our_KPFM_of_true_um_mosaics\\20200109_fordischargepaper_1\\10nm_thickness\\10um_frame10nmthick_PMMA@Si_84RH_patterns_0p4_3cm_2in_charged_20nm_45deg.tif')
+# pix_per_mm = im0.shape[0]/(0.010)
+# print(pix_per_mm)
+# im = im0[:,:]
+# plt.imshow(im0)
+# hanning = True
+# freqG,psdG = psds.power_spectrum(im, oned=True, hanning=hanning)
+# freqGB,psdGB = psds.power_spectrum(imB, oned=True, hanning=hanning)
+# data_for_export = np.vstack((freqG * pix_per_mm, psdG-psdGB))
+# np.save('KPFM/006', data_for_export)
+# pylab.figure(2)
+# pylab.clf()
+# pylab.loglog(freqG*pix_per_mm,psdG,label='Power spectrum')
+# pylab.loglog(freqGB*pix_per_mm,psdGB,label='Power spectrum, 45 deg')
+# # pylab.loglog(freqG*pix_per_mm,psdG-psdGB,label='Power spectrum minus noise spectrum')
+# pylab.legend(loc='best')
+# pylab.xlabel("Spatial frequency ($mm^{-1}$)")
+# pylab.ylabel("Normalized Power")
+# pylab.grid(True,which="major",ls="-")
+# plt.legend()
+# plt.show()

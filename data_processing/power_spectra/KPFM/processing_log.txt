@@ -1,0 +1,2 @@
+Source_experiment	Output_file
+PMMA@Si_80RH_patterns_0p4_3cm_5in_charged_10nm.tif	001.npy
