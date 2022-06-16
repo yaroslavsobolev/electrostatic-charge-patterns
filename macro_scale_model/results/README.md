@@ -5,7 +5,7 @@ numerical simulation of ESDs that accompany the stamp detachment process.
 
 Calculation results published in the paper (10.3 Gb altogether) are too
 large for Github in 2022, so they are in [repository in Harvard Dataverse](https://doi.org/10.7910/DVN/ZOFDKM) 
-and should be downloaded from there.
+and should be downloaded from there: [![](<https://img.shields.io/badge/Dataverse DOI-10.7910/DVN/ZOFDKM-orange>)](https://www.doi.org/10.7910/DVN/ZOFDKM)
 
 Unzip each file from `/macro-scale-model/results`
 of [the Harvard Dataverse repository](https://doi.org/10.7910/DVN/ZOFDKM) dataset and merge into this folder.

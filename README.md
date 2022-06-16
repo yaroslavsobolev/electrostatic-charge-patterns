@@ -22,7 +22,7 @@ Bibtech code for citing the paper:
 ```
 -->
 
-Experimental data and results of numerical calculations are too large for Github and 
+Experimental data and results of numerical calculations are too large (~16 Gb) for Github and 
 are available from [separate repository in Harvard Dataverse](https://doi.org/10.7910/DVN/ZOFDKM):
 [![](<https://img.shields.io/badge/Dataverse DOI-10.7910/DVN/ZOFDKM-orange>)](https://www.doi.org/10.7910/DVN/ZOFDKM)
 
