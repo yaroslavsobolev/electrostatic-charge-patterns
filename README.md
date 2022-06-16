@@ -42,9 +42,10 @@ Other Python dependencies are standard -- come pre-installed with Anaconda distr
 Running custom code controlling the experimental setups (Scanning Kelvin probe and setup for controlled delamination,
 see `custom_code_for_experimental_setups` folder)
 additionally requires:
-* 32-bit Python 3 
+* **32-bit** Python 3 
+* [PyAutoGui](https://pyautogui.readthedocs.io/en/latest/) version 0.9.47
 * [thorlabs_apt](https://pypi.org/project/thorlabs-apt/) module for Python
-* [Thorlabs APT](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=9019) drivers (32-bit).
+* [Thorlabs APT](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=9019) drivers (**32-bit**).
 
 Running the numerical model (see `macro-scale-model` folder) requires:
 * [PyAutoGui](https://pyautogui.readthedocs.io/en/latest/) version 0.9.47
