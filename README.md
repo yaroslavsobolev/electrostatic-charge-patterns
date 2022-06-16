@@ -32,17 +32,23 @@ This code is compatible with Python 3.7
 
 The primary Python dependencies are:
 
-* [Matplotlib](https://matplotlib.org/) version 3.1.1
-* [Numpy](https://numpy.org/) version 1.17.3
+* [Matplotlib](https://matplotlib.org/) version 3.1.0
+* [Matplotlib-scalebar](https://pypi.org/project/matplotlib-scalebar/) version 0.6.0
+* [Numpy](https://numpy.org/) version 1.21.6
+* [Scipy](https://scipy.org/) version 1.5.2
 
 Other Python dependencies are standard -- come pre-installed with Anaconda distribution.
 
 Running custom code controlling the experimental setups (Scanning Kelvin probe and setup for controlled delamination,
 see `custom_code_for_experimental_setups` folder)
-additionally requires 32-bit Python 3, thorlabs_apt module for Python and Thorlabs APT drivers (32-bit).
+additionally requires:
+* 32-bit Python 3 
+* [thorlabs_apt](https://pypi.org/project/thorlabs-apt/) module for Python
+* [Thorlabs APT](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=9019) drivers (32-bit).
 
-Running the numerical model (see `macro-scale-model` folder) requires
-COMSOL Multiphysics 5.4 or later with AC/DC package.
+Running the numerical model (see `macro-scale-model` folder) requires:
+* [PyAutoGui](https://pyautogui.readthedocs.io/en/latest/) version 0.9.47
+* [COMSOL Multiphysics](https://www.comsol.com/) version 5.4 or later, with AC/DC package
 
 ## Reproducing methods and figures from the paper
 
@@ -62,6 +68,9 @@ see `data_processing/kelvinprobe_viewer/moving_averages.py`
 
 For processing electrometer data (Figure 4d, Figure 3b, Supplementary Figures S10d, S11d, S12c, S6d) see 
 scripts named `data_processing/process_electrometer*.py`
+
+For evaluating net charge from electrometer data (Figure 3b, Supplementary Figure S6d) 
+see `data_processing/net_charge_extraction.py`
 
 For processing direct optical detection os sparks see (Figure 4b,c), see 
 scripts `data_processing/sparks_camera_processing*.py `

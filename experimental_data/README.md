@@ -1,6 +1,8 @@
 Experimental data files (6.72 Gb altogether) are too
 large for Github in 2022, so these files are in a different repository
-(Harvard Dataverse) and should be downloaded from a [repository in Harvard Dataverse](https://doi.org/10.7910/DVN/ZOFDKM)
+(Harvard Dataverse) and should be downloaded from a [repository in Harvard Dataverse](https://doi.org/10.7910/DVN/ZOFDKM):
+
+[![](<https://img.shields.io/badge/Dataverse DOI-10.7910/DVN/ZOFDKM-orange>)](https://www.doi.org/10.7910/DVN/ZOFDKM)
 
 Unzip and merge  into this folder. Folder `PDMS-PMMA_delamination_experiments` 
 contains experimental data except the SKP mapping. SKP mapping data is
