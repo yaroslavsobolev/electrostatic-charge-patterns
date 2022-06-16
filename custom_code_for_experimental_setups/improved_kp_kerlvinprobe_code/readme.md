@@ -14,3 +14,14 @@ Requires thorlabs_apt package and thorlabs APT driver for controlling the
 motors.
 
 The main script here is `scan_large_area.py`
+
+For settings in native software see screenshots `native-software-settings_1.PNG` 
+and `native-software-settings_2.PNG`. The Z-tracking function of the KP Tech software must be disabled.
+
+Before running the Python script, you should:
+* Align the sample to the scanning plane with the two-axis goniometer. Use Thorlabs native "APT User" software for that.
+  After your alignment, the "gradient" value in the KP Software must be roughtly 50-60 everywhere across the sample area.
+* Close the Thorlabs native "APT User" software.
+* Switch to the "Work function measurement" tab in the KP Technology native software (see `native-software-settings_2.PNG`).
+The "Start" button (`start.png`) must be visible on your computer screen, since it will be searched and clicked by `PyAutoGui`.
+The Z-tracking function of KP Tech software must be disabled. 
