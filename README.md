@@ -3,9 +3,9 @@
 This is a repository of code accompanying the research article 
 
 Yaroslav I. Sobolev, Witold Adamkiewicz, Marta Siek, Bartosz A. Grzybowski,
-"Charge mosaics on contact-electrified dielectrics result
-from polarity-inverting discharges", *Nature Physics* (2022). DOI
+"Charge mosaics on contact-electrified dielectrics result from polarity-inverting discharges", *Nature Physics* (2022).
 
+<!---
 Bibtech code for citing the paper:
 
 ```
@@ -20,22 +20,28 @@ Bibtech code for citing the paper:
   year     =  2022
 }
 ```
+-->
 
 Experimental data and results of numerical calculations are too large for Github and 
-are available from separate repository in Harvard Dataverse: URL, DOI.
+are available from [separate repository in Harvard Dataverse](https://doi.org/10.7910/DVN/ZOFDKM):
+[![](<https://img.shields.io/badge/Dataverse DOI-10.7910/DVN/ZOFDKM-orange>)](https://www.doi.org/10.7910/DVN/ZOFDKM)
 
 ## Installation
 
 This code is compatible with Python 3.7
 
-The primary dependencies are:
+The primary Python dependencies are:
 
 * [Matplotlib](https://matplotlib.org/) version 3.1.1
 * [Numpy](https://numpy.org/) version 1.17.3
 
-Other dependencies are standard -- come pre-installed with Anaconda.
+Other Python dependencies are standard -- come pre-installed with Anaconda distribution.
 
-For running the numerical model (see `macro-scale-model` folder) you would additionally need
+Running custom code controlling the experimental setups (Scanning Kelvin probe and setup for controlled delamination,
+see `custom_code_for_experimental_setups` folder)
+additionally requires 32-bit Python 3, thorlabs_apt module for Python and Thorlabs APT drivers (32-bit).
+
+Running the numerical model (see `macro-scale-model` folder) requires
 COMSOL Multiphysics 5.4 or later with AC/DC package.
 
 ## Reproducing methods and figures from the paper

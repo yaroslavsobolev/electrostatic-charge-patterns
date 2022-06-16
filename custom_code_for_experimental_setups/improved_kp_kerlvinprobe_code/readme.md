@@ -4,9 +4,8 @@ Information of the paper.
 
 The improvements mainly compensate for the poor
 choice of linear stages made by KP engineers.
-The result is at least 5x improvement (even greater for larger scan areas) 
-in scanning speed
-(and more if the scan steps are larger).
+The result is 3-100x faster scanning, 30-3000x more pixels.
+Speedup is greater if the scan steps are larger, i.e. larger area is scanned.
 
 Requires pyautogui package which is clicking the buttons on the native
 KP software, since KP technology does not provide any API.

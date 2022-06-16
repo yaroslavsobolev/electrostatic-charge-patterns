@@ -7,7 +7,7 @@ import matplotlib.ticker as plticker
 import glob
 # target_folder = 'D:/Docs/Science/UNIST/Projects/Vitektrification/combined_observation_experiments/20191009_5cm_3in_60RH_eq30min_dryPDMS_PMMAtol_uniformspeeds_0p075_B01/'
 # target_folder = 'experimental_data/PDMS-PMMA_delamination_experiments/data/20191015_5cm_3in_62RH_eq30min_oldPDMS5to1_PMMAtol_uniformspeeds_0p1_B01/'
-target_folder = 'E:/PDMS-PMMA_delamination_experiments/20191125_5cm_3in_60RH_ambRH43_eq30min_newPDMS5to1_PMMAtol_' \
+target_folder = 'experimental_data/PDMS-PMMA_delamination_experiments/data/20191125_5cm_3in_60RH_ambRH43_eq30min_newPDMS5to1_PMMAtol_' \
                 'newwire_uniformspeeds_slowstart_dark_0p4_A01/'
 
 data = np.loadtxt(glob.glob(target_folder + "electrometer/*values_only.txt")[0])
